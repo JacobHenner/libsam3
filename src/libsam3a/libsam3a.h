@@ -1,13 +1,19 @@
-/* async SAMv3 library
- *
- * This program is free software. It comes without any warranty, to
- * the extent permitted by applicable law. You can redistribute it
- * and/or modify it under the terms of the Do What The Fuck You Want
- * To Public License, Version 2, as published by Sam Hocevar. See
- * http://sam.zoy.org/wtfpl/COPYING for more details.
- *
- * I2P-Bote: 5m77dFKGEq6~7jgtrfw56q3t~SmfwZubmGdyOLQOPoPp8MYwsZ~pfUCwud6LB1EmFxkm4C3CGlzq-hVs9WnhUV
- * we are the Borg. */
+/*
+Copyright (C) 2015 Jacob Henner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef LIBSAM3A_H
 #define LIBSAM3A_H
 
@@ -250,7 +256,7 @@ extern int sam3aCancelConnection (Sam3AConnection *conn);
 /*
  * send data
  * this function can be used in cbSent() callback
- * 
+ *
  * return: <0: error; 0: ok
  */
 extern int sam3aSend (Sam3AConnection *conn, const void *data, int datasize);
